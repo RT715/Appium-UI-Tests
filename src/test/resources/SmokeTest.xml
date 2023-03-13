@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SmokeTestFlow" verbose="1"  parallel="tests" thread-count="2" >
+    <test name="SmokeTestFlow">
+        <classes>
+            <class name="SmokeTest" >
+                <methods>
+                    <include name="loginToApp"/>
+                    <include name="checkOnboardingTooltip"/>
+                    <include name="postCreation"/>
+                    <include name="postApproving"/>
+                    <include name="joinToPostAndCreateTheComment"/>
+                    <include name="dmPostCreation"/>
+
+                      <include name="checkPossibleToLeaveFriendConversation"/>
+                      <include name="checkThatNicNamePreservationAfterLeavingAJoiningParentPost"/>
+                      <include name="createCommentWith300Symbols"/>
+                      <include name="checkPossibleToLeaveOwnConversation"/>
+                      <include name="createCommentWithEmoji"/>
+                      <include name="navigationFromDMToParentPost"/>
+                      <include name="sendingAMessageAfterLeavingAJoiningDM"/>
+                      <include name="sendingAMessageAfterLeavingAJoiningParentPost"/>
+                      <include name="sharePostCreating"/>
+                      <include name="checkDeleteOwnMessage"/>
+                      <include name="checkForReportAbility"/>
+                      <include name="disabilityOfReportingTheSameMessageTwice"/>
+                      <include name="abilityToBlockUser"/>
+                      <include name="abilityToUNBlockUser"/>
+                    <include name="subtitleVerificationFromRejectedMessage"/>
+                    <include name="suspendedUser"/>
+                    <include name="checkDisabilityOfSuspendedUserCreateAMessage"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

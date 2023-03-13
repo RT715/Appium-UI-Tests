@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Notifications" verbose="1" parallel="tests" thread-count="2">
+    <test name="Notifications">
+        <classes>
+            <class name="Notifications">
+                <methods>
+                    <include name="loginToApp"/>
+                    <include name= "checkNotificationWhenNewPostCreated"/>
+                    <include name= "checkNotificationWhenNewPostCommentCreated"/>
+                    <include name= "checkNotificationWhenDMCreated"/>
+                    <include name= "checkNotificationWhenNewDmCommentCreated"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
